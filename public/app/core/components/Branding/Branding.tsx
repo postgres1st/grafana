@@ -16,7 +16,7 @@ export interface BrandComponentProps {
 export const LoginLogo: FC<BrandComponentProps & { logo?: string }> = ({ className, logo }) => {
   // return <img className={className} src={`${logo ? logo : 'public/img/grafana_icon.svg'}`} alt="Grafana" />;
   // @PERCONA
-  return <img className={className} src={`${logo ? logo : 'public/img/icons/mono/pmm-logo.svg'}`} alt="PMM" />;
+  return <img className={className} src={`${logo ? logo : 'public/img/icons/mono/pfm-logo.svg'}`} alt="PFMM" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -54,7 +54,7 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
 const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
   // return <img className={className} src="public/img/grafana_icon.svg" alt="Grafana" />;
   // @PERCONA
-  return <img className={className} src="public/img/percona-logo.svg" alt="PMM" />;
+  return <img className={className} src="public/img/pfm-logo.svg" alt="PFMM" />;
 };
 
 /**
@@ -132,8 +132,8 @@ export class Branding {
   //   return null;
   // };
   // @PERCONA
-  static AppTitle = 'Percona Monitoring and Management';
-  static LoginTitle = 'Percona Monitoring and Management';
+  static AppTitle = 'Postgres1st Monitoring and Management';
+  static LoginTitle = 'Postgres1st Monitoring and Management';
   static GetLoginSubTitle = () => {
     const slogans = [
       "Don't get in the way of the data",
