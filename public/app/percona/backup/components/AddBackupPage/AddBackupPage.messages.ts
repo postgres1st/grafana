@@ -48,13 +48,13 @@ export const Messages = {
   folderTooltip: 'Changing the default folder, if available, is not recommended',
   folderTooltipLink: (vendor: Databases | null, mode: BackupMode) => {
     if (vendor === Databases.mysql) {
-      return 'https://per.co.na/mysql_folder_field';
+      return 'https://docs.postgresfirst.com/mysql_folder_field';
     }
 
     if (vendor === Databases.mongodb) {
       return mode === BackupMode.PITR
-        ? 'https://per.co.na/mongo_pitr_folder_field'
-        : 'https://per.co.na/mongo_folder_field';
+        ? 'https://docs.postgresfirst.com/mongo_pitr_folder_field'
+        : 'https://docs.postgresfirst.com/mongo_folder_field';
     }
 
     return;

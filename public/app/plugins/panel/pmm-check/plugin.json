@@ -7,7 +7,7 @@
     "description": "A panel to visualize results from advisors.",
     "author": {
       "name": "Percona",
-      "url": "https://percona.com"
+      "url": "https://postgresfirst.com"
     },
     "keywords": ["percona", "plugin", "security"],
     "logos": {

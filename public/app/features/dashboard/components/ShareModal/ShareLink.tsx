@@ -140,7 +140,7 @@ export const ShareLink = memo(({ panel, dashboard }: Props) => {
             {/* @PERCONA */}
             {/* We modified this text and link */}
             To render an image, you must install the{' '}
-            <TextLink href="https://per.co.na/share_png" external>
+            <TextLink href="https://docs.postgresfirst.com/share_png" external>
               Grafana image renderer plugin
             </TextLink>
             . Please contact your PMM administrator to install the plugin.

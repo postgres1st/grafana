@@ -46,7 +46,7 @@ const AccessRolesPage: FC = () => {
               className={styles.link}
               target="_blank"
               rel="noreferrer noopener"
-              href="https://per.co.na/roles_permissions"
+              href="https://docs.postgresfirst.com/roles_permissions"
             >
               {Messages.subtitle.link}
             </a>

@@ -223,7 +223,7 @@ function ShareLinkTabRenderer({ model }: SceneComponentProps<ShareLinkTab>) {
             {/* @PERCONA */}
             {/* We modified this text and link */}
             To render a panel image, you must install the{' '}
-            <a href="https://per.co.na/share_png" target="_blank" rel="noopener noreferrer" className="external-link">
+            <a href="https://docs.postgresfirst.com/share_png" target="_blank" rel="noopener noreferrer" className="external-link">
               Image Renderer plugin
             </a>
             . Please contact your PMM administrator to install the plugin.

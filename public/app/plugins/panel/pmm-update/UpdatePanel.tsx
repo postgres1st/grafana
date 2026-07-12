@@ -15,12 +15,12 @@ import { formatDateWithTime } from './UpdatePanel.utils';
 import { AvailableUpdate, CurrentVersion, InfoBox, LastCheck } from './components';
 
 const DEPRECATION_DOCKER_UPGRADE_HREF =
-  'https://docs.percona.com/percona-monitoring-and-management/3/pmm-upgrade/upgrade_docker.html';
+  'https://docs.postgresfirst.com/percona-monitoring-and-management/3/pmm-upgrade/upgrade_docker.html';
 
 const DEPRECATION_PODMAN_UPGRADE_HREF =
-  'https://docs.percona.com/percona-monitoring-and-management/3/pmm-upgrade/upgrade_podman.html';
+  'https://docs.postgresfirst.com/percona-monitoring-and-management/3/pmm-upgrade/upgrade_podman.html';
 const DEPRECATION_HELM_UPGRADE_HREF =
-  'https://docs.percona.com/percona-monitoring-and-management/3/pmm-upgrade/upgrade_helm.html';
+  'https://docs.postgresfirst.com/percona-monitoring-and-management/3/pmm-upgrade/upgrade_helm.html';
 
 const DeprecationTooltipContent: FC = () => {
   const tooltipStyles = useStyles2(getDeprecationTooltipStyles);

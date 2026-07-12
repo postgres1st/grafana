@@ -6,7 +6,7 @@ import { AvailableUpdate } from './AvailableUpdate';
 
 const version = 'x.y.z';
 const tag = 'percona/pmm-server:x.y.z-rc.j+1234567890';
-const newsLink = 'https://percona.com';
+const newsLink = 'https://postgresfirst.com';
 const timestamp = '2024-06-23T00:00:00.000Z';
 
 const nextVersion: LatestInformation = {

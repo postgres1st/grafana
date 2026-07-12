@@ -26,7 +26,7 @@ export const AlertsEmptyState: FC = () => {
       </p>
       <p className={styles.paragraph}>
         {Messages.secondParagraph}{' '}
-        <TextLink href="https://per.co.na/alerting" external inline>
+        <TextLink href="https://docs.postgresfirst.com/alerting" external inline>
           {Messages.documentationLink}
         </TextLink>
         .

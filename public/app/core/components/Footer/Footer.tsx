@@ -22,13 +22,13 @@ export let getFooterLinks = (): FooterLink[] => {
     return [
       {
         id: 'pmm-dump',
-        text: 'PMM Dump',
+        text: 'PFMM Dump',
         icon: 'brain',
         url: '/graph/pmm-dump',
       },
       {
         id: 'pmm-logs',
-        text: 'PMM Logs',
+        text: 'PFMM Logs',
         icon: 'download-alt',
         url: '/logs.zip',
         target: '_blank',
@@ -38,21 +38,21 @@ export let getFooterLinks = (): FooterLink[] => {
         id: 'pmm-docs',
         text: t('nav.help/documentation', 'Documentation'),
         icon: 'document-info',
-        url: 'https://per.co.na/pmm_documentation',
+        url: 'https://docs.postgresfirst.com/pmm_documentation',
       },
       {
         target: '_blank',
         id: 'support',
         text: t('nav.help/support', 'Support'),
         icon: 'question-circle',
-        url: 'https://per.co.na/pmm_support',
+        url: 'https://docs.postgresfirst.com/pmm_support',
       },
       {
         target: '_blank',
         id: 'community',
         text: t('nav.help/community', 'Community'),
         icon: 'comments-alt',
-        url: 'https://per.co.na/pmm_community',
+        url: 'https://docs.postgresfirst.com/pmm_community',
       },
     ];
   } else {
@@ -62,21 +62,21 @@ export let getFooterLinks = (): FooterLink[] => {
         id: 'pmm-docs',
         text: t('nav.help/documentation', 'Documentation'),
         icon: 'document-info',
-        url: 'https://per.co.na/pmm_documentation',
+        url: 'https://docs.postgresfirst.com/pmm_documentation',
       },
       {
         target: '_blank',
         id: 'support',
         text: t('nav.help/support', 'Support'),
         icon: 'question-circle',
-        url: 'https://per.co.na/pmm_support',
+        url: 'https://docs.postgresfirst.com/pmm_support',
       },
       {
         target: '_blank',
         id: 'community',
         text: t('nav.help/community', 'Community'),
         icon: 'comments-alt',
-        url: 'https://per.co.na/pmm_community',
+        url: 'https://docs.postgresfirst.com/pmm_community',
       },
     ];
   }

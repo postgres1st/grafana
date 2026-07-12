@@ -1,1 +1,1 @@
-export const SECURITY_CREDENTIALS_DOC_LINK = 'https://per.co.na/QcYQRx';
+export const SECURITY_CREDENTIALS_DOC_LINK = 'https://docs.postgresfirst.com/QcYQRx';

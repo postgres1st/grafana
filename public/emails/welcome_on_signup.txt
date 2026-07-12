@@ -1,20 +1,20 @@
-{{HiddenSubject .Subject "Welcome to Percona Monitoring and Management (PMM)"}}
+{{HiddenSubject .Subject "Welcome to Postgres1st Monitoring and Management (PFMM)"}}
 
 Hi {{.Name}},
 
-Welcome to PMM! You're now ready to monitor and optimize your database performance with PMM’s powerful suite of tools and analytics dashboards.
+Welcome to PFMM! You're now ready to monitor and optimize your database performance with PFMM’s powerful suite of tools and analytics dashboards.
 
-As a new PMM user, here are some key resources to help you get started:
+As a new PFMM user, here are some key resources to help you get started:
 
-- Getting Started Guide - https://per.co.na/pmm/about-PMM - Learn how to leverage PMM’s monitoring capabilities effectively.
+- Getting Started Guide - https://docs.postgresfirst.com/pmm/about-PFMM - Learn how to leverage PFMM’s monitoring capabilities effectively.
 - Pre-built dashboards - {{.AppUrl}}/graph/dashboards - Explore dashboards tailored for MySQL, MongoDB, and PostgreSQL.
 
-Need help? Join our Community Forum - https://forums.percona.com/c/percona-monitoring-and-management-pmm/pmm-3/84 - to connect with fellow PMM users and get expert support.
+Need help? Join our Community Forum - https://forums.postgresfirst.com/c/percona-monitoring-and-management-pmm/pmm-3/84 - to connect with fellow PFMM users and get expert support.
 
-Thank you for choosing PMM for your databases!
+Thank you for choosing PFMM for your databases!
 
 Best regards,
-The Percona Team
+The Postgres1st Team
 
 
 Sent by Grafana v{{.BuildVersion}} (c) {{now | date "2006"}} Grafana Labs
