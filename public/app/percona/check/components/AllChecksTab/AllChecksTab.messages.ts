@@ -19,7 +19,7 @@ export const Messages = {
   },
   tooltips: {
     category: 'Advisor category tags to filter the list of checks (case sensitive). E.g.: performance, security.',
-    availableSoon: 'Coming soon. This filter will be available with a future PMM release.',
+    availableSoon: 'Coming soon. This filter will be available with a future PFMM release.',
   },
   run: 'Run',
   checksExecutionStarted: 'All checks started running in the background',

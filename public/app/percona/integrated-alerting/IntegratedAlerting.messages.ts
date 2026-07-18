@@ -1,5 +1,5 @@
 export const Messages = {
-  title: 'Percona Alerting',
+  title: 'Postgres1st Alerting',
   tabs: {
     alerts: 'Alerts',
     alertRules: 'Alert Rules',
@@ -64,5 +64,5 @@ export const Messages = {
       },
     },
   },
-  alerting: 'Percona Alerting',
+  alerting: 'Postgres1st Alerting',
 };

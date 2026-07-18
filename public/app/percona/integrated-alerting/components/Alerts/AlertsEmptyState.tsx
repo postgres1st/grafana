@@ -14,7 +14,7 @@ export const AlertsEmptyState: FC = () => {
         <Icon name="check-circle" size="xxl" /> {Messages.heading}
       </h1>
       <p className={styles.paragraph}>
-        To get started, use PMM&apos;s built-in{' '}
+        To get started, use PFMM&apos;s built-in{' '}
         <TextLink href="/alerting/alert-rule-templates" inline>
           {Messages.templateLink}
         </TextLink>{' '}

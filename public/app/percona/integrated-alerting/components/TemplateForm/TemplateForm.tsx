@@ -138,7 +138,7 @@ export const TemplateForm: FC = () => {
       </Field>
 
       {/* TODO add remaining params as API starts supporting them
-      https://github.com/percona/pmm-managed/blob/PMM-2.0/models/template_model.go#L112 */}
+      https://github.com/percona/pmm-managed/blob/PFMM-2.0/models/template_model.go#L112 */}
       {currentTemplate?.params?.map(
         ({ float, type, name, summary, unit }) =>
           type === TemplateParamType.FLOAT && (

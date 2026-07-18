@@ -4,5 +4,5 @@ export const Messages = {
   alertRulesLink: 'Alert rules',
   firstParagraph: 'created by our database experts, then configure your notifications at',
   secondParagraph: 'For more information, see',
-  documentationLink: 'Percona Alerting documentation',
+  documentationLink: 'Postgres1st Alerting documentation',
 };

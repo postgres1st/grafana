@@ -1,3 +1,3 @@
-# PMM Update
+# PFMM Update
 
-This panel checks and installs updates for PMM
+This panel checks and installs updates for PFMM

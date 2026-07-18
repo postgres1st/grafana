@@ -1,7 +1,7 @@
 export const Messages = {
   summary:
     'Simplify troubleshooting and accelerate issue resolution by securely sharing relevant data, ensuring a smoother support experience.',
-  breadCrumbTitle: 'PMM Export / Export new dataset',
+  breadCrumbTitle: 'PFMM Export / Export new dataset',
   title: 'Select data to export',
   selectServiceNames: 'Service names',
   allNodes: 'All nodes',

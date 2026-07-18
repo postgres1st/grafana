@@ -44,7 +44,7 @@ export const Services = () => {
   const styles = useStyles2(getStyles);
   const [isLoading, setIsLoading] = useState(true);
 
-  // FIX PMM-14640: Track component mount state to prevent "zombie" requests after unmount.
+  // FIX PFMM-14640: Track component mount state to prevent "zombie" requests after unmount.
   // Problem: useRecurringCall creates a recursive timer chain that continues executing even
   // after component unmounts, causing memory leaks and unwanted API calls on other pages.
   // Solution: Use ref to track mount state and check it before making requests in loadData.
@@ -70,7 +70,7 @@ export const Services = () => {
   const [showClusters, setShowClusters] = useLocalStorage(CLUSTERS_SWITCH_KEY, false);
 
   const loadData = useCallback(async () => {
-    // FIX PMM-14640: Check if component is still mounted before making requests.
+    // FIX PFMM-14640: Check if component is still mounted before making requests.
     // This prevents "zombie" requests when useRecurringCall timer fires after unmount.
     // Without this check, requests to /v1/inventory/services:getTypes continue on other pages.
     if (!isMountedRef.current) {
@@ -93,12 +93,12 @@ export const Services = () => {
   }, []);
 
   useEffect(() => {
-    // FIX PMM-14640: Set mounted flag on component mount
+    // FIX PFMM-14640: Set mounted flag on component mount
     isMountedRef.current = true;
 
     loadData()
       .then(() => {
-        // FIX PMM-14640: Only start recurring timer if component is still mounted
+        // FIX PFMM-14640: Only start recurring timer if component is still mounted
         if (isMountedRef.current) {
           triggerTimeout(loadData, DATA_INTERVAL);
           setIsLoading(false);
@@ -111,7 +111,7 @@ export const Services = () => {
       });
 
     return () => {
-      // FIX PMM-14640: Mark component as unmounted and stop the timer.
+      // FIX PFMM-14640: Mark component as unmounted and stop the timer.
       // Note: stopTimeout() only stops the current timer, but if a callback is already
       // executing inside setTimeout, it will try to schedule a new timer. That's why
       // we also set isMountedRef.current = false, so loadData() will exit early.

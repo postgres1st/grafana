@@ -1,12 +1,12 @@
 {
   "type": "panel",
-  "name": "PMM Advisors",
+  "name": "PFMM Advisors",
   "id": "pmm-check-panel",
   "skipDataQuery": true,
   "info": {
     "description": "A panel to visualize results from advisors.",
     "author": {
-      "name": "Percona",
+      "name": "Postgres1st",
       "url": "https://postgresfirst.com"
     },
     "keywords": ["percona", "plugin", "security"],

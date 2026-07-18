@@ -36,7 +36,7 @@ import {
 } from './PerconaNavigation/PerconaNavigation.utils';
 import PerconaUpdateVersion from './PerconaUpdateVersion/PerconaUpdateVersion';
 import { appEvents } from 'app/core/app_events';
-// This component is only responsible for populating the store with Percona's settings initially
+// This component is only responsible for populating the store with Postgres1st's settings initially
 export const PerconaBootstrapper = ({ onReady }: PerconaBootstrapperProps) => {
   const dispatch = useAppDispatch();
   const categorizedAdvisors = useSelector(getCategorizedAdvisors);
@@ -61,7 +61,7 @@ export const PerconaBootstrapper = ({ onReady }: PerconaBootstrapperProps) => {
       await dispatch(updateNavIndex(buildAdvisorsNavItem(categorizedAdvisors)));
 
       if (isPmmAdmin(config.bootData.user)) {
-        // PMM Dump
+        // PFMM Dump
         const help = updatedNavTree['help'];
         if (help) {
           dispatch(updateNavIndex(PMM_DUMP_PAGE));

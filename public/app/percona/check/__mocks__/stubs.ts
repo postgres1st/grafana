@@ -67,7 +67,7 @@ export const alertsStub = [
   },
   {
     annotations: {
-      description: 'PMM Server is not the latest major version',
+      description: 'PFMM Server is not the latest major version',
       summary: 'pmm-server is outdated',
       read_more_url: '',
     },

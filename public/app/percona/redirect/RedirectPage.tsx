@@ -13,7 +13,7 @@ const RedirectPage = () => {
 
   return (
     <Page navId="home" layout={PageLayoutType.Canvas}>
-      <div>Redirecting to PMM...</div>
+      <div>Redirecting to PFMM...</div>
     </Page>
   );
 };

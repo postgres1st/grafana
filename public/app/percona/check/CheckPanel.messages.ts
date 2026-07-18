@@ -3,6 +3,6 @@ export const Messages = {
   allChecksTitle: 'All',
   silenced: 'Silenced',
   advisors: 'Advisors feature',
-  pmmSettings: 'PMM Settings.',
+  pmmSettings: 'PFMM Settings.',
   readMore: 'Read more',
 };

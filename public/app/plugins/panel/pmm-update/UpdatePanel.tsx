@@ -27,7 +27,7 @@ const DeprecationTooltipContent: FC = () => {
 
   return (
     <>
-      <strong>UI upgrades deprecated</strong>: This upgrade panel will be removed in PMM 3.9.0.
+      <strong>UI upgrades deprecated</strong>: This upgrade panel will be removed in PFMM 3.9.0.
       <br />
       Use&nbsp;
       <a className={tooltipStyles.link} href={DEPRECATION_DOCKER_UPGRADE_HREF} target="_blank" rel="noreferrer">
@@ -41,7 +41,7 @@ const DeprecationTooltipContent: FC = () => {
       <a className={tooltipStyles.link} href={DEPRECATION_HELM_UPGRADE_HREF} target="_blank" rel="noreferrer">
         Helm
       </a>{' '}
-      for future PMM upgrades.
+      for future PFMM upgrades.
     </>
   );
 };
