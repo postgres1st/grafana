@@ -11,8 +11,8 @@
     },
     "keywords": ["percona", "plugin", "security"],
     "logos": {
-      "small": "img/pmm-logo.svg",
-      "large": "img/pmm-logo.svg"
+      "small": "img/pfm-logo.svg",
+      "large": "img/pfm-logo.svg"
     }
   }
 }

@@ -32,12 +32,12 @@ export const AddInstance: FC<AddInstanceProps> = ({ selectedInstanceType, onSele
   const instanceList = useMemo<InstanceListItem[]>(
     () => [
       { type: InstanceTypesExtra.rds, title: Messages.titles.rds },
-      { type: Databases.mysql, title: Messages.titles.mysql, icon: 'percona-database-mysql' },
-      { type: Databases.mongodb, title: Messages.titles.mongodb, icon: 'percona-database-mongodb' },
-      { type: Databases.postgresql, title: Messages.titles.postgresql, icon: 'percona-database-postgresql' },
-      { type: Databases.proxysql, title: Messages.titles.proxysql, icon: 'percona-database-proxysql' },
-      { type: Databases.haproxy, title: Messages.titles.haproxy, icon: 'percona-database-haproxy' },
-      { type: Databases.valkey, title: Messages.titles.valkey, icon: 'percona-database-valkey' },
+      { type: Databases.mysql, title: Messages.titles.mysql, icon: 'pfm-database-mysql' },
+      { type: Databases.mongodb, title: Messages.titles.mongodb, icon: 'pfm-database-mongodb' },
+      { type: Databases.postgresql, title: Messages.titles.postgresql, icon: 'pfm-database-postgresql' },
+      { type: Databases.proxysql, title: Messages.titles.proxysql, icon: 'pfm-database-proxysql' },
+      { type: Databases.haproxy, title: Messages.titles.haproxy, icon: 'pfm-database-haproxy' },
+      { type: Databases.valkey, title: Messages.titles.valkey, icon: 'pfm-database-valkey' },
       { type: InstanceTypesExtra.external, title: Messages.titles.external },
       { type: InstanceTypesExtra.azure, title: Messages.titles.azure, isHidden: !showAzure },
     ],

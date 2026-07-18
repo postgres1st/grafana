@@ -19,7 +19,7 @@ export const SilenceBell: FC<SilenceBellProps> = ({ silenced, tooltip = '', onCl
       tooltipPlacement="top"
       tooltip={tooltip}
       onClick={handleClick}
-      name={silenced ? 'percona-bell' : 'percona-bell-slash'}
+      name={silenced ? 'pfm-bell' : 'pfm-bell-slash'}
       iconType="mono"
       data-testid="silence-button"
       title={tooltip}

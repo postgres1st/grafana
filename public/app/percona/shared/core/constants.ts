@@ -50,13 +50,13 @@ export const HIDDEN_LABELS = ['alertname', 'job', 'rule_id', 'template_name', 's
 export const SETTINGS_TIMEOUT = 1500;
 
 export const DATABASE_ICONS: Record<Databases, string> = {
-  [Databases.mysql]: 'percona-database-mysql',
-  [Databases.mongodb]: 'percona-database-mongodb',
-  [Databases.postgresql]: 'percona-database-postgresql',
-  [Databases.proxysql]: 'percona-database-proxysql',
-  [Databases.mariadb]: 'percona-database-mysql',
-  [Databases.haproxy]: 'percona-database-haproxy',
-  [Databases.valkey]: 'percona-database-valkey',
+  [Databases.mysql]: 'pfm-database-mysql',
+  [Databases.mongodb]: 'pfm-database-mongodb',
+  [Databases.postgresql]: 'pfm-database-postgresql',
+  [Databases.proxysql]: 'pfm-database-proxysql',
+  [Databases.mariadb]: 'pfm-database-mysql',
+  [Databases.haproxy]: 'pfm-database-haproxy',
+  [Databases.valkey]: 'pfm-database-valkey',
 };
 
 export const INT_32 = {
