@@ -1,4 +1,4 @@
 <mj-column background-color="transparent">
   <!-- @PERCONA -->
-  <mj-image padding="0" width="200px" src="https://www.postgresfirst.com/wp-content/uploads/product-logos/PFMM-logo-horizontal-400-dark-text.png" align="left" />
+  <mj-text padding="0" align="left" font-size="20px" font-weight="700" color="#2E2E2E">Postgres1st Monitoring and Management</mj-text>
 </mj-column>
