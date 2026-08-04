@@ -8,7 +8,7 @@ import { logger } from 'app/percona/shared/helpers/logger';
 import { DISCOVERY_RDS_CANCEL_TOKEN, INITIAL_CREDENTIALS } from './Discovery.constants';
 import DiscoveryService from './Discovery.service';
 import { getStyles } from './Discovery.styles';
-import { DiscoverySearchPanelProps, Instance } from './Discovery.types';
+import { DiscoverRDSEngine, DiscoverySearchPanelProps, Instance } from './Discovery.types';
 import Credentials from './components/Credentials/Credentials';
 import { RDSCredentialsForm } from './components/Credentials/Credentials.types';
 import { DiscoveryDocs } from './components/DiscoveryDocs/DiscoveryDocs';
@@ -35,7 +35,14 @@ const Discovery: FC<DiscoverySearchPanelProps> = ({ onSubmit, selectInstance }) 
         );
 
         if (result) {
-          setInstances(result.rds_instances);
+          // @PERCONA
+          // RDS discovery returns both MySQL and PostgreSQL instances, but this
+          // deployment only supports PostgreSQL -- adding a discovered MySQL
+          // instance is rejected by the server ("Service type mysql is not
+          // supported by this deployment"), so listing them only invites that
+          // error. Same reason mysql/mongodb/proxysql/valkey were dropped from
+          // the Add Service chooser.
+          setInstances(result.rds_instances.filter((i) => i.engine === DiscoverRDSEngine.POSTGRESQL));
         }
       } catch (e) {
         if (isApiCancelError(e)) {

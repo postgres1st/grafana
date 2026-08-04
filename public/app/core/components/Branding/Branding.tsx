@@ -5,8 +5,6 @@ import { colorManipulator, GrafanaTheme2, NavModelItem } from '@grafana/data';
 import { selectors } from '@grafana/e2e-selectors';
 import { reportInteraction } from '@grafana/runtime';
 import { Icon, Tooltip, useStyles2, useTheme2 } from '@grafana/ui';
-import g8LoginDarkSvg from 'img/g8_login_dark.svg';
-import g8LoginLightSvg from 'img/g8_login_light.svg';
 
 export interface BrandComponentProps {
   className?: string;
@@ -30,10 +28,14 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
       right: 0,
       bottom: 0,
       top: 0,
-      background: `url(${theme.isDark ? g8LoginDarkSvg : g8LoginLightSvg})`,
-      backgroundPosition: 'top center',
-      backgroundSize: 'auto',
-      backgroundRepeat: 'no-repeat',
+      // @PERCONA
+      // Grafana's stock g8_login artwork is replaced by a flat wash built from the
+      // Postgres1st blue (#0E7ABE light / #5EAEE0 dark, the SPA's primary.main), so the
+      // login page carries our identity rather than upstream's. No image asset, so
+      // there is nothing to scale or to load before the page paints.
+      background: theme.isDark
+        ? 'radial-gradient(ellipse at 50% 0%, #0A5585 0%, #072F4A 45%, #04121C 100%)'
+        : 'radial-gradient(ellipse at 50% 0%, #E6F2FA 0%, #BDDCF0 45%, #8FC3E4 100%)',
 
       opacity: 0,
 

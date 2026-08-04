@@ -22,7 +22,6 @@ import {
   PMM_ACCESS_ROLE_EDIT_PAGE,
   PMM_ACCESS_ROLES_PAGE,
   PMM_ADD_INSTANCE_PAGE,
-  PMM_BACKUP_PAGE,
   PMM_DUMP_PAGE,
   PMM_EDIT_INSTANCE_PAGE,
   PMM_EXPORT_DUMP_PAGE,
@@ -51,7 +50,11 @@ export const PerconaBootstrapper = ({ onReady }: PerconaBootstrapperProps) => {
       const { alertingEnabled } = settings || {};
 
       await dispatch(updateNavIndex(PMM_EXPORT_DUMP_PAGE));
-      await dispatch(updateNavIndex(PMM_BACKUP_PAGE));
+      // @PERCONA
+      // PMM_BACKUP_PAGE is deliberately not registered. The server implements
+      // backup for MySQL and MongoDB only -- vendorToServiceType() returns
+      // Unimplemented for postgresql -- so in this PostgreSQL-only deployment
+      // every action behind that section fails.
       await dispatch(updateNavIndex(PMM_INVENTORY_PAGE));
       await dispatch(updateNavIndex(PMM_ADD_INSTANCE_PAGE));
       await dispatch(updateNavIndex(PMM_EDIT_INSTANCE_PAGE));

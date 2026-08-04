@@ -195,17 +195,17 @@ export const LoginCtrl = memo(({ resetCode, children }: Props) => {
       return redirectUrl;
     }
 
-    // /pmm-ui/graph - do nothing
+    // /pfm-ui/graph - do nothing
     if (redirectUrl.startsWith(appSubUrl)) {
       return redirectUrl;
     }
 
-    // /graph - replace with /pmm-ui/graph
+    // /graph - replace with /pfm-ui/graph
     if (redirectUrl.startsWith(config.appSubUrl)) {
       return redirectUrl.replace(config.appSubUrl, appSubUrl);
     }
 
-    // just a path, add /pmm-ui/graph to the beginning
+    // just a path, add /pfm-ui/graph to the beginning
     return appSubUrl + redirectUrl;
   };
 

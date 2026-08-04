@@ -101,7 +101,7 @@ export const PMM_INVENTORY_PAGE: NavModelItem = {
 export const PMM_UPDATES_LINK: NavModelItem = {
   id: 'pmm-updates',
   text: 'Updates',
-  url: '/pmm-ui/updates',
+  url: '/pfm-ui/updates',
   hideFromTabs: true,
   target: '_self',
 };
