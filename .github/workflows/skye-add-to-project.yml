@@ -47,7 +47,7 @@ jobs:
       - name: Get node ID for item
         if: steps.check_user.outputs.user_allowed == 'true'
         id: get_node_id
-        uses: octokit/graphql-action@51bf543c240dcd14761320e2efc625dc32ec0d32
+        uses: octokit/graphql-action@5b65500be70d0caa9d96af62c1fdeb61755a2be6
         with:
           query: |
             query getNodeId($owner: String!, $repo: String!, $number: Int!) {
@@ -68,7 +68,7 @@ jobs:
       # Finally, add the issue to the project board
       - name: Add to project board
         if: steps.check_user.outputs.user_allowed == 'true'
-        uses: octokit/graphql-action@51bf543c240dcd14761320e2efc625dc32ec0d32
+        uses: octokit/graphql-action@5b65500be70d0caa9d96af62c1fdeb61755a2be6
         with:
           query: |
             mutation addItem($projectid: ID!, $itemid: ID!) {
