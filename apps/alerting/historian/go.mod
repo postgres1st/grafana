@@ -4,7 +4,7 @@ go 1.26.4
 
 require (
 	github.com/go-kit/log v0.2.1
-	github.com/grafana/alerting v0.0.0-20260206150146-b5f69c55f91a
+	github.com/grafana/alerting v0.0.0-release-12.4.3
 	github.com/grafana/dskit v0.0.0-20260108123158-1a1acfb6ef2e
 	github.com/grafana/grafana-app-sdk v0.50.2
 	github.com/grafana/grafana-app-sdk/logging v0.50.2
