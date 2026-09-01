@@ -1,4 +1,4 @@
-[[HiddenSubject .Subject "[[.InvitedBy]] has invited you to join Postgres1st Monitoring and Management (PFMM)"]]
+[[HiddenSubject .Subject "[[.InvitedBy]] has invited you to join PGF WatchTower (PGF WatchTower)"]]
 
 You're invited to join [[.OrgName]]
 

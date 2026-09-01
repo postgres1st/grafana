@@ -217,7 +217,7 @@ export const NodesTab = () => {
     [styles, getActions, clearClusterToggle, isHighAvailabilityEnabled]
   );
 
-  // FIX PFMM-14640: Added all captured variables to dependency array to prevent stale closures.
+  // FIX PGF WatchTower-14640: Added all captured variables to dependency array to prevent stale closures.
   // Problem: Empty dependency array [] caused loadData to capture initial values and never update.
   // Solution: Include all used variables (dispatch, generateToken) in dependencies.
   const loadData = useCallback(async () => {

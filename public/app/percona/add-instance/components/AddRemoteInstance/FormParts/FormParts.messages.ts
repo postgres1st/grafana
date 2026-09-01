@@ -146,7 +146,7 @@ export const Messages = {
         password: 'Your database password',
         instanceID: 'Instance ID to use',
         timeout:
-          'How long PFMM should wait when connecting to this service. Increase this for remote or high-latency databases. If the connection times out, PFMM retries the next time it collects metrics. Leave empty to use the default of 2s.',
+          'How long PGF WatchTower should wait when connecting to this service. Increase this for remote or high-latency databases. If the connection times out, PGF WatchTower retries the next time it collects metrics. Leave empty to use the default of 2s.',
       },
       postgresqlDetails: {
         database: 'Database name',

@@ -83,7 +83,7 @@ function SharePanelInternallyRenderer({ model }: SceneComponentProps<SharePanelI
             <a href="https://docs.postgresfirst.com/share_png" target="_blank" rel="noopener noreferrer" className="external-link">
               Image Renderer plugin
             </a>
-            . Please contact your PFMM administrator to install the plugin.
+            . Please contact your PGF WatchTower administrator to install the plugin.
           </Alert>
         )}
         <SharePanelPreview

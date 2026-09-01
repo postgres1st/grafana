@@ -63,7 +63,7 @@ export const buildIntegratedAlertingMenuItem = (mainLinks: NavIndex): NavModelIt
 export const GRAFANA_NAV_ID_USERS_AND_ACCESS = 'cfg/access';
 
 /**
- * Returns a copy of the "Users and access" nav section with PFMM Access Roles appended, for {@link updateNavIndex}.
+ * Returns a copy of the "Users and access" nav section with PGF WatchTower Access Roles appended, for {@link updateNavIndex}.
  * Undefined when that section is absent (e.g. empty menu removed server-side).
  */
 export const buildUsersAndAccessNavWithRoles = (navTree: NavIndex): NavModelItem | undefined => {

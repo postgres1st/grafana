@@ -1,7 +1,7 @@
 /**
  * @fileoverview
  * Same events as in ui/apps/pmm-compat/src/lib/events.ts in pmm repository
- * NEEDS TO BE UPDATED WHEN PFMM EVENTS ARE UPDATED
+ * NEEDS TO BE UPDATED WHEN PGF WatchTower EVENTS ARE UPDATED
  */
 
 import { BusEventBase } from '@grafana/data';

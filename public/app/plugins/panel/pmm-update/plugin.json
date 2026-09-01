@@ -1,6 +1,6 @@
 {
   "type": "panel",
-  "name": "PFMM Update",
+  "name": "PGF WatchTower Update",
   "id": "pmm-update-panel",
   "info": {
     "description": "A panel to visualize and install updates.",

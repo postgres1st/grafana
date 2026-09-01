@@ -13,7 +13,7 @@ const RedirectPage = () => {
 
   return (
     <Page navId="home" layout={PageLayoutType.Canvas}>
-      <div>Redirecting to PFMM...</div>
+      <div>Redirecting to PGF WatchTower...</div>
     </Page>
   );
 };

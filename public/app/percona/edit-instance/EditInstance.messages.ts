@@ -9,7 +9,7 @@ export const Messages = {
   },
   modal: {
     description:
-      'Changing existing labels can affect other parts of PFMM dependent on it, such as: alerting, data in dashboards, etc. ',
+      'Changing existing labels can affect other parts of PGF WatchTower dependent on it, such as: alerting, data in dashboards, etc. ',
     details: 'Find more details about it in ',
     detailsLink: 'our documentation',
     dot: '.',

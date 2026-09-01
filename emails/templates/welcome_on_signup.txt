@@ -1,17 +1,17 @@
-[[HiddenSubject .Subject "Welcome to Postgres1st Monitoring and Management (PFMM)"]]
+[[HiddenSubject .Subject "Welcome to PGF WatchTower (PGF WatchTower)"]]
 
 Hi [[.Name]],
 
-Welcome to PFMM! You're now ready to monitor and optimize your database performance with PFMM’s powerful suite of tools and analytics dashboards.
+Welcome to PGF WatchTower! You're now ready to monitor and optimize your database performance with PGF WatchTower’s powerful suite of tools and analytics dashboards.
 
-As a new PFMM user, here are some key resources to help you get started:
+As a new PGF WatchTower user, here are some key resources to help you get started:
 
-- Getting Started Guide - https://docs.postgresfirst.com/pmm/about-PFMM - Learn how to leverage PFMM’s monitoring capabilities effectively.
+- Getting Started Guide - https://docs.postgresfirst.com/pmm/about-PFMM - Learn how to leverage PGF WatchTower’s monitoring capabilities effectively.
 - Pre-built dashboards - [[.AppUrl]]/graph/dashboards - Explore dashboards tailored for MySQL, MongoDB, and PostgreSQL.
 
-Need help? Join our Community Forum - https://forums.postgresfirst.com/c/percona-monitoring-and-management-pmm/pmm-3/84 - to connect with fellow PFMM users and get expert support.
+Need help? Join our Community Forum - https://forums.postgresfirst.com/c/percona-monitoring-and-management-pmm/pmm-3/84 - to connect with fellow PGF WatchTower users and get expert support.
 
-Thank you for choosing PFMM for your databases!
+Thank you for choosing PGF WatchTower for your databases!
 
 Best regards,
 The Postgres1st Team

@@ -92,9 +92,9 @@ export const PMM_NODES_PAGE: NavModelItem = {
 export const PMM_INVENTORY_PAGE: NavModelItem = {
   id: 'inventory',
   icon: 'server-network',
-  text: 'PFMM Inventory',
+  text: 'PGF WatchTower Inventory',
   url: `${config.appSubUrl}/inventory`,
-  subTitle: 'PFMM Inventory',
+  subTitle: 'PGF WatchTower Inventory',
   children: [PMM_SERVICES_PAGE, PMM_NODES_PAGE],
 };
 
@@ -108,14 +108,14 @@ export const PMM_UPDATES_LINK: NavModelItem = {
 
 export const PMM_HEADING_LINK: NavModelItem = {
   id: 'settings-pmm',
-  text: 'PFMM',
+  text: 'PGF WatchTower',
 };
 
 export const PMM_ADD_INSTANCE_PAGE: NavModelItem = {
   id: 'add-instance',
   url: `${config.appSubUrl}/add-instance`,
   icon: 'plus',
-  subTitle: 'PFMM Inventory',
+  subTitle: 'PGF WatchTower Inventory',
   text: 'Add Service',
   hideFromTabs: true,
 };
@@ -142,7 +142,7 @@ export const PMM_DUMP_PAGE: NavModelItem = {
   icon: 'brain',
   subTitle:
     'Simplify troubleshooting and accelerate issue resolution by securely sharing relevant data, ensuring a smoother support experience.',
-  text: 'PFMM Dump',
+  text: 'PGF WatchTower Dump',
   children: [PMM_EXPORT_DUMP_PAGE],
 };
 

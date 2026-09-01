@@ -1,7 +1,7 @@
 export const Messages = {
   title: 'Access Roles',
   subtitle: {
-    text: 'Access roles is a way to control the access to metrics and some PFMM functionalities, for an increased security standard. Worth noting that every time you invite new users, the default role will be assigned to them.',
+    text: 'Access roles is a way to control the access to metrics and some PGF WatchTower functionalities, for an increased security standard. Worth noting that every time you invite new users, the default role will be assigned to them.',
     further: ' For futher explanation on ',
     link: 'how the Access roles work, check our documentation',
     dot: '.',
