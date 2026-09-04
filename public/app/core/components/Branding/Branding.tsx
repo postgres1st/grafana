@@ -14,7 +14,7 @@ export interface BrandComponentProps {
 export const LoginLogo: FC<BrandComponentProps & { logo?: string }> = ({ className, logo }) => {
   // return <img className={className} src={`${logo ? logo : 'public/img/grafana_icon.svg'}`} alt="Grafana" />;
   // @PERCONA
-  return <img className={className} src={`${logo ? logo : 'public/img/icons/mono/pfm-logo.svg'}`} alt="PGF WatchTower" />;
+  return <img className={className} src={`${logo ? logo : 'public/img/icons/mono/pfw-logo.svg'}`} alt="PGF WatchTower" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -56,7 +56,7 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
 const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
   // return <img className={className} src="public/img/grafana_icon.svg" alt="Grafana" />;
   // @PERCONA
-  return <img className={className} src="public/img/pfm-logo.svg" alt="PGF WatchTower" />;
+  return <img className={className} src="public/img/pfw-logo.svg" alt="PGF WatchTower" />;
 };
 
 /**

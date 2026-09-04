@@ -13,7 +13,7 @@ import {
 export const buildAdvisorsNavItem = (categorizedAdvisors: CategorizedAdvisor) => {
   const modelItem: NavModelItem = {
     id: `advisors`,
-    icon: 'pfm-database-checks',
+    icon: 'pfw-database-checks',
     text: 'Advisors',
     sortWeight: WEIGHTS.alerting,
     subTitle: 'Run and analyze all checks',
@@ -109,7 +109,7 @@ export const getPmmSettingsPage = (): NavModelItem => {
 
   const page: NavModelItem = {
     id: 'settings',
-    icon: 'pfm-setting',
+    icon: 'pfw-setting',
     text: 'Settings',
     sortWeight: WEIGHTS.config,
     url: `${config.appSubUrl}/settings`,

@@ -8,7 +8,7 @@ const RedirectPage = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.location.replace('/pfm-ui' + pathname);
+    window.location.replace('/pfw-ui' + pathname);
   }, [pathname]);
 
   return (

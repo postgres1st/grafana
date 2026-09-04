@@ -10,8 +10,8 @@
     },
     "keywords": ["percona", "plugin", "updates"],
     "logos": {
-      "small": "img/pfm-logo.svg",
-      "large": "img/pfm-logo.svg"
+      "small": "img/pfw-logo.svg",
+      "large": "img/pfw-logo.svg"
     }
   }
 }

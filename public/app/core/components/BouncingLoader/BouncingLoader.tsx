@@ -16,7 +16,7 @@ export function BouncingLoader() {
     >
       <div className={styles.bounce}>
         {/* @PERCONA - change to PMM logo */}
-        <img alt="" src="public/img/pfm-logo.svg" className={styles.logo} />
+        <img alt="" src="public/img/pfw-logo.svg" className={styles.logo} />
       </div>
     </div>
   );
