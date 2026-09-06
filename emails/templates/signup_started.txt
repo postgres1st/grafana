@@ -1,4 +1,4 @@
-[[HiddenSubject .Subject "Welcome to PGF WatchTower (PGF WatchTower), please complete your sign up!"]]
+[[HiddenSubject .Subject "Welcome to Postgres1st WatchTower (Postgres1st WatchTower), please complete your sign up!"]]
 
 Complete the signup
 

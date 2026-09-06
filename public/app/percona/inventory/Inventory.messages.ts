@@ -70,7 +70,7 @@ export const Messages = {
       nodeType: 'Node Type',
       address: 'Address',
       services: 'Services',
-      isPmmServerNode: 'List PGF WatchTower Server only nodes',
+      isPmmServerNode: 'List Postgres1st WatchTower Server only nodes',
     },
     deleteConfirmation: (nrItems: number) =>
       `Are you sure that you want to permanently delete ${nrItems} node${nrItems ? 's' : ''}`,

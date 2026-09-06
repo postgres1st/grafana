@@ -226,7 +226,7 @@ function ShareLinkTabRenderer({ model }: SceneComponentProps<ShareLinkTab>) {
             <a href="https://docs.postgresfirst.com/share_png" target="_blank" rel="noopener noreferrer" className="external-link">
               Image Renderer plugin
             </a>
-            . Please contact your PGF WatchTower administrator to install the plugin.
+            . Please contact your Postgres1st WatchTower administrator to install the plugin.
           </Trans>
         </Alert>
       )}

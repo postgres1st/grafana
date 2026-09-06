@@ -83,7 +83,7 @@ export const Agents: FC = () => {
     [flattenAgents]
   );
 
-  // FIX PGF WatchTower-14640: Extract primitive IDs to avoid object reference issues in useEffect dependencies.
+  // FIX Postgres1st WatchTower-14640: Extract primitive IDs to avoid object reference issues in useEffect dependencies.
   // Problem: Using entire service/node objects in dependencies causes excessive re-renders when
   // Redux state updates, even when the actual service/node we care about hasn't changed.
   // Solution: Extract only the primitive ID values we need to detect when our specific service/node loads.
@@ -147,7 +147,7 @@ export const Agents: FC = () => {
     [agentTypeOptions]
   );
 
-  // FIX PGF WatchTower-14640: Added all captured variables to dependency array to prevent stale closures.
+  // FIX Postgres1st WatchTower-14640: Added all captured variables to dependency array to prevent stale closures.
   // Problem: Empty dependency array [] caused loadData to capture initial values and never update,
   // leading to incorrect API calls with stale serviceId/nodeId.
   // Solution: Include all used variables (params.serviceId, nodeId, generateToken) in dependencies.
@@ -187,7 +187,7 @@ export const Agents: FC = () => {
 
   const deletionMsg = useMemo(() => Messages.agents.deleteConfirmation(selected.length), [selected]);
 
-  // FIX PGF WatchTower-14640: Refactored to use only 4 primitive dependencies instead of 7 with unstable objects.
+  // FIX Postgres1st WatchTower-14640: Refactored to use only 4 primitive dependencies instead of 7 with unstable objects.
   // Problem: Original had 7 dependencies including service/node objects which changed on every Redux update,
   // causing excessive re-renders and making it hard to understand what triggers the effect.
   // Solution: Use async function pattern with early returns, depend only on URL params (params.serviceId, nodeId)

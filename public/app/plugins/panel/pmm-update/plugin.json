@@ -1,6 +1,6 @@
 {
   "type": "panel",
-  "name": "PGF WatchTower Update",
+  "name": "Postgres1st WatchTower Update",
   "id": "pmm-update-panel",
   "info": {
     "description": "A panel to visualize and install updates.",

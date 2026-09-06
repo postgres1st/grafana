@@ -7,7 +7,7 @@
     <!-- ⬇ Don't forget to specify an email subject below! ⬇ -->
     <mj-title>
       <!-- @PERCONA -->
-      {{ Subject .Subject .TemplateData "Welcome to PGF WatchTower (PGF WatchTower), please complete your sign up!" }}
+      {{ Subject .Subject .TemplateData "Welcome to Postgres1st WatchTower (Postgres1st WatchTower), please complete your sign up!" }}
     </mj-title>
     <mj-include path="./partials/layout/head.mjml" />
   </mj-head>

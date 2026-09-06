@@ -81,7 +81,7 @@ export const ShareLink = memo(({ panel, dashboard }: Props) => {
         <ThemePicker selectedTheme={selectedTheme} onChange={onThemeChange} />
         {/* @PERCONA */}
         {differentLocalhostDomains && (
-          <Alert title="PGF WatchTower: URL mismatch" severity="warning">
+          <Alert title="Postgres1st WatchTower: URL mismatch" severity="warning">
             <Trans i18nKey="share-modal.link.url-mismatch-description">
               <p>
                 Your domain on Grafana&apos;s .ini file is localhost but you are on a different domain. The short URL
@@ -143,7 +143,7 @@ export const ShareLink = memo(({ panel, dashboard }: Props) => {
             <TextLink href="https://docs.postgresfirst.com/share_png" external>
               Grafana image renderer plugin
             </TextLink>
-            . Please contact your PGF WatchTower administrator to install the plugin.
+            . Please contact your Postgres1st WatchTower administrator to install the plugin.
           </Trans>
         </Alert>
       )}

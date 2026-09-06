@@ -1,6 +1,6 @@
 {
   "type": "panel",
-  "name": "PGF WatchTower Advisors",
+  "name": "Postgres1st WatchTower Advisors",
   "id": "pmm-check-panel",
   "skipDataQuery": true,
   "info": {

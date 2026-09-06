@@ -22,13 +22,13 @@ export let getFooterLinks = (): FooterLink[] => {
     return [
       {
         id: 'pmm-dump',
-        text: 'PGF WatchTower Dump',
+        text: 'Postgres1st WatchTower Dump',
         icon: 'brain',
         url: '/graph/pmm-dump',
       },
       {
         id: 'pmm-logs',
-        text: 'PGF WatchTower Logs',
+        text: 'Postgres1st WatchTower Logs',
         icon: 'download-alt',
         url: '/logs.zip',
         target: '_blank',

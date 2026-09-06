@@ -1,7 +1,7 @@
 export const Messages = {
   summary:
     'Simplify troubleshooting and accelerate issue resolution by securely sharing relevant data, ensuring a smoother support experience.',
-  breadCrumbTitle: 'PGF WatchTower Export / Export new dataset',
+  breadCrumbTitle: 'Postgres1st WatchTower Export / Export new dataset',
   title: 'Select data to export',
   selectServiceNames: 'Service names',
   allNodes: 'All nodes',

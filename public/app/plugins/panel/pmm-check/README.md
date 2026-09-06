@@ -1,3 +1,3 @@
-# PGF WatchTower Advisors
+# Postgres1st WatchTower Advisors
 
 This panel lists results from advisors.

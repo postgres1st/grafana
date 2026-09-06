@@ -67,7 +67,7 @@ export const alertsStub = [
   },
   {
     annotations: {
-      description: 'PGF WatchTower Server is not the latest major version',
+      description: 'Postgres1st WatchTower Server is not the latest major version',
       summary: 'pmm-server is outdated',
       read_more_url: '',
     },

@@ -23,7 +23,7 @@ export const AGENT_LABELS_SKIP_KEYS: string[] = [
 ];
 
 export const AGENT_TYPE_NAME: Record<AgentType, string> = {
-  [AgentType.pmmAgent]: 'PGF WatchTower agent',
+  [AgentType.pmmAgent]: 'Postgres1st WatchTower agent',
   [AgentType.nodeExporter]: 'Node exporter',
   [AgentType.mysqldExporter]: 'MySQL exporter',
   [AgentType.mongodbExporter]: 'MongoDB exporter',

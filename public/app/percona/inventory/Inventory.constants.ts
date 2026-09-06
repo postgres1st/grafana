@@ -10,7 +10,7 @@ export const inventoryTypes = {
   haproxy: 'HAProxy',
   mysqld_exporter: 'MySQL exporter',
   node_exporter: 'Node exporter',
-  pmm_agent: 'PGF WatchTower Agent',
+  pmm_agent: 'Postgres1st WatchTower Agent',
   vm_agent: 'VictoriaMetrics vmagent',
   postgres_exporter: 'Postgres exporter',
   postgresql: 'PostgreSQL',

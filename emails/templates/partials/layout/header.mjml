@@ -1,4 +1,4 @@
 <mj-column background-color="transparent">
   <!-- @PERCONA -->
-  <mj-text padding="0" align="left" font-size="20px" font-weight="700" color="#2E2E2E">PGF WatchTower</mj-text>
+  <mj-text padding="0" align="left" font-size="20px" font-weight="700" color="#2E2E2E">Postgres1st WatchTower</mj-text>
 </mj-column>

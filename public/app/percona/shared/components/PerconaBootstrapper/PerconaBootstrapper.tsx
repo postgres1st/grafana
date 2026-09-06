@@ -64,7 +64,7 @@ export const PerconaBootstrapper = ({ onReady }: PerconaBootstrapperProps) => {
       await dispatch(updateNavIndex(buildAdvisorsNavItem(categorizedAdvisors)));
 
       if (isPmmAdmin(config.bootData.user)) {
-        // PGF WatchTower Dump
+        // Postgres1st WatchTower Dump
         const help = updatedNavTree['help'];
         if (help) {
           dispatch(updateNavIndex(PMM_DUMP_PAGE));
