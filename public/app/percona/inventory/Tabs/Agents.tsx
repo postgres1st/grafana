@@ -35,7 +35,7 @@ import { GET_AGENTS_CANCEL_TOKEN, GET_NODES_CANCEL_TOKEN, GET_SERVICES_CANCEL_TO
 import { Messages } from '../Inventory.messages';
 import { InventoryService } from '../Inventory.service';
 
-import { AGENT_TYPE_OPTIONS } from './Agents.constants';
+import { AGENT_TYPE_NAME } from './Agents.constants';
 import { beautifyAgentType, getAgentStatusColor, getAgentStatusText, toAgentModel } from './Agents.utils';
 import { getTagsFromLabels } from './Services.utils';
 import { getStyles } from './Tabs.styles';
@@ -62,6 +62,26 @@ export const Agents: FC = () => {
   const service = services.find((s) => s.params.serviceId === params.serviceId);
   const node = mappedNodes.find((s) => s.nodeId === nodeId);
   const flattenAgents = useMemo(() => data.map((value) => ({ type: value.type, ...value.params })), [data]);
+
+  // The Type filter offers only the agent types this deployment actually has.
+  //
+  // It used to be AGENT_TYPE_OPTIONS, built from the full upstream AGENT_TYPE_NAME map, so
+  // the dropdown advertised MySQL, MongoDB, ProxySQL, RDS, Azure and Valkey agents that a
+  // server with this allowlist can never produce -- offering a filter that always returns
+  // nothing reads as a broken product rather than a scoped one.
+  //
+  // Derived from the rows rather than from a hardcoded list: the server already publishes
+  // its allowlist (supported_service_types in /v1/server/settings), and a second copy kept
+  // in the UI is exactly the thing that drifts. AGENT_TYPE_NAME itself is left complete --
+  // it is the label lookup for rendering a row, and a type missing from it would render as
+  // a raw enum value.
+  const agentTypeOptions = useMemo(
+    () =>
+      Array.from(new Set(flattenAgents.map((agent) => agent.type)))
+        .map((type) => ({ value: type, label: AGENT_TYPE_NAME[type] ?? type }))
+        .sort((a, b) => a.label.localeCompare(b.label)),
+    [flattenAgents]
+  );
 
   // FIX PGF WatchTower-14640: Extract primitive IDs to avoid object reference issues in useEffect dependencies.
   // Problem: Using entire service/node objects in dependencies causes excessive re-renders when
@@ -111,7 +131,7 @@ export const Agents: FC = () => {
         accessor: 'type',
         Cell: ({ value }) => <>{beautifyAgentType(value)}</>,
         type: FilterFieldTypes.DROPDOWN,
-        options: AGENT_TYPE_OPTIONS,
+        options: agentTypeOptions,
       },
       {
         Header: Messages.agents.columns.agentId,
@@ -120,7 +140,11 @@ export const Agents: FC = () => {
       },
       getExpandAndActionsCol(),
     ],
-    []
+    // agentTypeOptions is derived from the rows, so this memo must depend on it. With the
+    // empty array it had, the Type filter would capture the options from the first render
+    // -- before any agent has loaded -- and stay permanently empty. Same stale-closure
+    // shape as the loadData fix below.
+    [agentTypeOptions]
   );
 
   // FIX PGF WatchTower-14640: Added all captured variables to dependency array to prevent stale closures.

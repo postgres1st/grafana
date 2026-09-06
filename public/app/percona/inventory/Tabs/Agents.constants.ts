@@ -46,9 +46,7 @@ export const AGENT_TYPE_NAME: Record<AgentType, string> = {
   [AgentType.remote_rds]: 'Remote RDS agent',
 };
 
-export const AGENT_TYPE_OPTIONS = Object.entries(AGENT_TYPE_NAME)
-  .map<SelectableValue<AgentType>>(([type, name]) => ({
-    value: type as AgentType,
-    label: name,
-  }))
-  .sort((a, b) => a.label!.localeCompare(b.label!));
+// AGENT_TYPE_OPTIONS was here: every entry of AGENT_TYPE_NAME turned into a filter
+// option. It advertised MySQL, MongoDB, ProxySQL, RDS, Azure and Valkey agents that a
+// server with this allowlist cannot produce. Agents.tsx now derives the Type filter from
+// the rows it actually has; do not reintroduce a static list here.
